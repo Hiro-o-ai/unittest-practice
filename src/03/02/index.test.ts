@@ -1,4 +1,4 @@
-import { add, sub } from ".";
+import { add, sub } from "./";
 
 describe("四則演算", () => {
   describe("add", () => {
@@ -8,6 +8,9 @@ describe("四則演算", () => {
     test("1 + 2 は 3", () => {
       expect(add(1, 2)).toBe(3);
     });
+    test("5 + 5 は 10", () => {
+      expect(add(5, 5)).toBe(10);
+    })
   });
   describe("sub", () => {
     test("1 - 1 は 0", () => {
