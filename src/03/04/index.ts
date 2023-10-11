@@ -13,3 +13,19 @@ export function sub(a: number, b: number) {
   }
   return sum;
 }
+
+export function addCustom(a: number, b: number) {
+  const sum = a + b;
+  if (sum > 200) {
+    return 200;
+  }
+  return sum;
+}
+
+export function subCustom(a: number, b: number) {
+  const sum = a - b;
+  if (sum < -10) {
+    return -10;
+  }
+  return sum;
+}
